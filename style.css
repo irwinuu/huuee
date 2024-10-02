@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #a6dfd3;
+    font-family: "Poppins", sans-serif;
+}
+
+section{
+    font-family: "Poppins", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+/*--------------------------------HoMEE----------------------------------*/
+
+.home{
+    width: 100%;
+    height: 100vh; 
+    background: linear-gradient(rgba(3, 65, 50, 0.751), rgba(9, 90, 70, 0.719)), url(gambar/aaa.png);
+    background-size: cover;
+    background-attachment:fixed ;
+    background-position: center;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    padding: 1vw 0vw 0.5vw 0vw;
+    transition: all .4s ease;
+    background-color: #86d1c062;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+
+.nav{
+    display: flex;
+    padding: 0vw 30vw 0vw 30vw;
+    justify-content: space-between;
+}
+
+.nav img{
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav ul{
+    display: flex;
+    padding-top: 1.5vw;
+    gap: 2.5vw;
+}
+
+
+.nav ul li{
+    font-weight: 550;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all .40s;
+}
+
+.nav ul li:hover{
+    font-size: 16.5px;
+    border-bottom: 2px solid #9be9c9;
+}
+
+.title{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fade-in 2s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.home h1{
+    font-size: 60px;
+}
+
+.home h5{
+    font-weight: 500;
+}
+
+
+/*         ABT ME          */
+.me{
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-image: url(gambar/bg.png);
+    background-position: center;
+}
+
+.abt{
+    padding: 18.5vw 0vw 10vw 15vw;
+}
+
+.abt h1{
+    font-size: 30px;
+}
+
+.abt h5{
+    font-weight: 400;
+}
+
+/* ---------------------------Portfolio---------------------------- */
+
+.port{
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-image: url(gambar/bgg.png);
+    background-position: center;
+}
+
+.port h1{
+    padding: 10px;
+    font-size: 50px;
+}
+
+.port .isi{
+    padding: 6vw 4vw 0vw 4vw;
+}
+
+
+.port img{
+    width: 300px;
+    height: auto;
+    padding: 1px;
+    transition: .50s;
+}
+.port img:hover{
+    width: 295px;
+}
+
+.port .su{
+    display: flex;
+    justify-content: center;
+}
+
+.port .sub{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #03503a;
+}
+
+/* ------------------------Contact--------------------------- */
+
+.cont{
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-image: url(gambar/bgg.png);
+    background-position: center;
+}
+
+.cont h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 8vw 0vw 3vw 0vw;
+}
+
+.fom{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw 8vw 2vw 8vw;
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #03503a80;
+}
+
+form input{
+    font-size: 10px;
+    padding: 7px;
+    color: #03503a;
+    background-color: #d5fbf0;
+    border: 1px #03503a;
+    border-radius: 3px;
+    
+}
+
+form .sambit{
+    cursor: pointer;
+    width: 100px;
+    color: #03503a;
+    background-color: #08db9f;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form .sambit:hover{
+    background-color: #08db9fba;
+}
+
+/* --------------------Footer---------------------- */
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 30vh; 
+    background-color: #30514b;
+}
+
+footer h4{
+    padding: 15px 0px 0px 0px;
+    font-size: 30px;
+    opacity: 60%;
+}
+
+footer h5{
+    font-size: 15px;
+    opacity: 60%;
+}
+
+footer .ah{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .sigh{
+    padding: 15px 0px 20px 0px;
+}
+
+footer .sigh i{
+    cursor: pointer;
+    font-size: 30px;
+    padding: 10px 13px 10px 13px;
+    border-radius: 100px;
+    background-color: #08db9f37;
+}
+
+footer .sigh i:hover{
+    background-color: #08db9f93;
+}
